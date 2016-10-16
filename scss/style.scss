@@ -1,19 +1,17 @@
-@import url('https://fonts.googleapis.com/css?family=Titillium+Web');
+@import url('https://fonts.googleapis.com/css?family=Titillium+Web:200,200i,300,300i,400,400i,600,600i,700,700i,900');
 @import url('https://fonts.googleapis.com/css?family=PT+Sans');
-
 $grey:#414242;
 $grey2:#b6bdbf;
 $white:#fff;
-
 * {
-  box-sizing: border-box;
+    box-sizing: border-box;
 }
 
 @mixin border-radius($radius) {
-  -webkit-border-radius: $radius;
-     -moz-border-radius: $radius;
-      -ms-border-radius: $radius;
-          border-radius: $radius;
+    -webkit-border-radius: $radius;
+    -moz-border-radius: $radius;
+    -ms-border-radius: $radius;
+    border-radius: $radius;
 }
 
 .no-pad {
@@ -32,6 +30,7 @@ $white:#fff;
 .left {
     height: 300px;
 }
+
 .profil {
     @include border-radius (5% 0);
     background-image: url(../img/profil.jpg);
@@ -44,8 +43,8 @@ $white:#fff;
     top: 30px;
     border: 5px solid $grey2;
     z-index: 9999;
-
 }
+
 .right {
     font-family: 'Titillium Web', sans-serif;
     background-color: $grey;
@@ -76,10 +75,12 @@ $white:#fff;
 .top {
     background-color: $grey;
 }
+
 .social {
     display: flex;
     margin-top: 70px;
 }
+
 .social-block {
     display: flex;
     padding-right: 70px;
@@ -98,6 +99,7 @@ $white:#fff;
     width: 35px;
     height: 35px;
 }
+
 .twitter {
     background-image: url(../img/twitter.svg);
     width: 25px;
@@ -113,6 +115,7 @@ $white:#fff;
     background-size: cover;
     background-position: center;
 }
+
 .viadeo {
     background-image: url(../img/viadeo.svg);
     width: 25px;
@@ -120,9 +123,11 @@ $white:#fff;
     background-size: cover;
     background-position: center;
 }
+
 .bg {
     width: 100%;
 }
+
 .bottom {
     background-image: url(../img/bg.jpg);
     height: 1000px;
@@ -130,5 +135,127 @@ $white:#fff;
     background-position: center;
     background-size: contain;
     background-repeat: repeat;
+}
+
+
+/*.left {
+    float: left;
+}*/
+
+.part-1 {
+    margin-top: 100px;
+    font-family: 'Titillium Web', sans-serif;
+    color: $grey;
+    width: 100%;
+    height: 100%;
+    .vertical-trace {
+        width: 2px;
+        height: 200px;
+        background-color: $grey;
+        position: relative;
+        left: 20px;
+    }
+    .title-1 {
+        display: flex;
+        .square-2 {
+            @include border-radius (15% 0);
+            background-color: $grey;
+            width: 40px;
+            height: 40px;
+            .ico-formation {
+                background-image: url(../img/formation.svg);
+                width: 30px;
+                height: 30px;
+                background-size: cover;
+                background-position: center;
+            }
+        }
+    }
+}
+
+.title-2 {
+    position: relative;
+    bottom: 175px;
+    left: 50px;
+}
+
+.name-t2 {
+    font-size: 2.5rem;
+    font-weight: bold;
+}
+
+.annee {
+    font-size: 1.8rem;
+}
+.circle {
+    @include border-radius (20%);
+    position: relative;
+    right: 6px;
+    top: 40px;
+    width: 15px;
+    height: 15px;
+    background-color: $grey;
+}
+
+.circle-2 {
+    @include border-radius (20%);
+    position: relative;
+    right: 6px;
+    top: 140px;
+    width: 15px;
+    height: 15px;
+    background-color: $grey;
+}
+
+.formation {
+    padding-left: 10px;
+    font-size: 3rem;
+    margin: 0;
+    font-weight: bold;
+    color: $grey;
+}
+
+.content {
+    position: relative;
+    bottom: 175px;
+    left: 50px;
+    font-size: 1.8rem;
+}
+
+/*
+.title-3 {
+    position: relative;
+    bottom: 55px;
+    left: 40px;
+}
+
+.name-t3 {
+    font-size: 2.5rem;
+    font-family: 'Titillium Web', sans-serif;
+    font-weight: bold;
+}
+
+.annee-3 {
+    font-size: 1.8rem;
+}
+
+.content-3 {
+    position: relative;
+    bottom: 55px;
+    left: 40px;
+    font-size: 1.8rem;
+}
+*/
+
+.content-2 {
+    position: relative;
+    width:100%;
+    top: 80px;
+    right: 15px;
+}
+
+.content-3 {
+    position: relative;
+    top:70px;
 }
 
