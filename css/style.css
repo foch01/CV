@@ -1,3 +1,116 @@
+@import url("https://fonts.googleapis.com/css?family=Titillium+Web");
+@import url("https://fonts.googleapis.com/css?family=PT+Sans");
+* {
+  box-sizing: border-box; }
 
+.no-pad {
+  padding-right: 0;
+  padding-left: 0;
+  padding-bottom: 0;
+  padding-top: 0; }
+
+.center {
+  display: flex;
+  justify-content: center;
+  align-items: center; }
+
+.left {
+  height: 300px; }
+
+.profil {
+  -webkit-border-radius: 5% 0;
+  -moz-border-radius: 5% 0;
+  -ms-border-radius: 5% 0;
+  border-radius: 5% 0;
+  background-image: url(../img/profil.jpg);
+  width: 100%;
+  height: 100%;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  position: relative;
+  top: 30px;
+  border: 5px solid #b6bdbf;
+  z-index: 9999; }
+
+.right {
+  font-family: 'Titillium Web', sans-serif;
+  background-color: #414242;
+  margin-top: 20px;
+  color: #fff; }
+
+.uppercase {
+  text-transform: uppercase; }
+
+.name {
+  font-weight: bold;
+  font-size: 5rem; }
+
+.job {
+  font-weight: bold;
+  font-size: 2.5rem;
+  position: relative;
+  bottom: 15px; }
+
+.biography {
+  font-family: 'PT Sans', sans-serif !important; }
+
+.top {
+  background-color: #414242; }
+
+.social {
+  display: flex;
+  margin-top: 70px; }
+
+.social-block {
+  display: flex;
+  padding-right: 70px; }
+
+.url {
+  margin: 5px 10px;
+  font-family: 'PT Sans', sans-serif !important;
+  font-weight: bold;
+  font-size: 2rem; }
+
+.square {
+  -webkit-border-radius: 15% 0;
+  -moz-border-radius: 15% 0;
+  -ms-border-radius: 15% 0;
+  border-radius: 15% 0;
+  background-color: white;
+  width: 35px;
+  height: 35px; }
+
+.twitter {
+  background-image: url(../img/twitter.svg);
+  width: 25px;
+  height: 25px;
+  background-size: cover;
+  background-position: center; }
+
+.linkedin {
+  background-image: url(../img/linkedin.svg);
+  width: 25px;
+  height: 25px;
+  background-size: cover;
+  background-position: center; }
+
+.viadeo {
+  background-image: url(../img/viadeo.svg);
+  width: 25px;
+  height: 25px;
+  background-size: cover;
+  background-position: center; }
+
+.bg {
+  width: 100%; }
+
+.bottom {
+  background-image: url(../img/bg.jpg);
+  height: 1000px;
+  width: 100%;
+  background-position: center;
+  background-size: contain;
+  background-repeat: repeat; }
 
 /*# sourceMappingURL=style.css.map */
