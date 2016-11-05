@@ -2,7 +2,10 @@
 @import url('https://fonts.googleapis.com/css?family=PT+Sans');
 $grey:#414242;
 $grey2:#b6bdbf;
+$white2:#d7d9d7;
 $white:#fff;
+$black:#2c2c2c;
+$titilium :'Titillium Web', sans-serif;
 * {
     box-sizing: border-box;
 }
@@ -13,7 +16,6 @@ $white:#fff;
     -ms-border-radius: $radius;
     border-radius: $radius;
 }
-
 .no-pad {
     padding-right: 0;
     padding-left: 0;
@@ -91,6 +93,8 @@ $white:#fff;
     font-family: 'PT Sans', sans-serif !important;
     font-weight: bold;
     font-size: 2rem;
+    text-decoration: none;
+    color: $white;
 }
 
 .square {
@@ -99,7 +103,14 @@ $white:#fff;
     width: 35px;
     height: 35px;
 }
+.hover-ico:hover {
+    background-color: $grey2;
+}
 
+.hover-link {
+    color: $grey2;
+    text-decoration: none;
+}
 .twitter {
     background-image: url(../img/twitter.svg);
     width: 25px;
@@ -130,132 +141,360 @@ $white:#fff;
 
 .bottom {
     background-image: url(../img/bg.jpg);
-    height: 1000px;
+    height: 2000px;
     width: 100%;
     background-position: center;
     background-size: contain;
     background-repeat: repeat;
 }
 
-
-/*.left {
-    float: left;
-}*/
-
 .part-1 {
-    margin-top: 100px;
+    margin-top: 70px;
+    margin-left: 50px;
+    height: 270px;
+}
+
+.part-2 {
+    margin-top: 50px;
+    margin-left: 50px;
+    height: 270px;
+}
+
+.part-3 {
+    margin-top: 50px;
+    margin-left: 50px;
+    height: 370px;
+}
+
+.part-4 {
+    margin-top: 50px;
+    margin-left: 50px;
+}
+
+.square-l {
+    @include border-radius (15% 0);
+    background-color: $grey;
+    width: 45px;
+    height: 45px;
+    .ico-formation {
+        background-image: url(../img/formation.svg);
+        width: 35px;
+        height: 35px;
+        background-size: cover;
+        background-position: center;
+    }
+}
+
+.title {
+    display: flex;
+}
+
+.verticale-lign {
+    margin-left: 20px;
+    width: 1px;
+    height: 200px;
+    background-color: $grey;
+}
+
+.square-xs {
+    @include border-radius (30%);
+    position: relative;
+    width: 12px;
+    height: 12px;
+    background-color: $grey;
+}
+
+.title-1 {
     font-family: 'Titillium Web', sans-serif;
+    font-weight: bold;
+    text-transform: uppercase;
+    font-size: 30px;
     color: $grey;
-    width: 100%;
-    height: 100%;
-    .vertical-trace {
-        width: 2px;
-        height: 200px;
-        background-color: $grey;
-        position: relative;
-        left: 20px;
-    }
-    .title-1 {
-        display: flex;
-        .square-2 {
-            @include border-radius (15% 0);
-            background-color: $grey;
-            width: 40px;
-            height: 40px;
-            .ico-formation {
-                background-image: url(../img/formation.svg);
-                width: 30px;
-                height: 30px;
-                background-size: cover;
-                background-position: center;
-            }
-        }
-    }
+    padding-left: 20px;
 }
 
 .title-2 {
-    position: relative;
-    bottom: 175px;
-    left: 50px;
+    display: flex;
+    color: $black;
+    font-family: 'Titillium Web', sans-serif;
 }
 
-.name-t2 {
-    font-size: 2.5rem;
+.object {
     font-weight: bold;
+    font-size: 24px;
+    text-transform: uppercase;
 }
 
 .annee {
-    font-size: 1.8rem;
-}
-.circle {
-    @include border-radius (20%);
-    position: relative;
-    right: 6px;
-    top: 40px;
-    width: 15px;
-    height: 15px;
-    background-color: $grey;
+    font-size: 18px;
+    padding-top: 5px;
+    padding-left: 5px;
 }
 
-.circle-2 {
-    @include border-radius (20%);
-    position: relative;
-    right: 6px;
-    top: 140px;
-    width: 15px;
-    height: 15px;
-    background-color: $grey;
-}
-
-.formation {
-    padding-left: 10px;
-    font-size: 3rem;
-    margin: 0;
-    font-weight: bold;
+.describe {
     color: $grey;
+    font-size: 16px;
 }
 
-.content {
+.square-xs-1 {
+    bottom: 140px;
+    left: 15px;
+}
+
+.square-xs-2 {
+    bottom: 70px;
+    left: 15px;
+}
+
+.item-1 {
     position: relative;
-    bottom: 175px;
-    left: 50px;
-    font-size: 1.8rem;
+    bottom: 180px;
+    left: 35px;
 }
 
-/*
-.title-3 {
+.item-2 {
     position: relative;
-    bottom: 55px;
-    left: 40px;
+    bottom: 150px;
+    left: 35px;
 }
 
-.name-t3 {
-    font-size: 2.5rem;
+.ico-pro {
+    background-image: url(../img/experience.svg);
+    width: 35px;
+    height: 35px;
+    background-size: cover;
+    background-position: center;
+}
+
+.ico-diplome {
+    background-image: url(../img/diploma.svg);
+    width: 35px;
+    height: 35px;
+    background-size: cover;
+    background-position: center;
+}
+
+.verticale-lign-3 {
+    margin-left: 20px;
+    width: 1px;
+    height: 280px;
+    background-color: $grey;
+}
+
+.square-xs-3 {
+    bottom: 220px;
+    left: 15px;
+}
+
+.item-3 {
+    position: relative;
+    bottom: 380px;
+    left: 35px;
+}
+
+.ico-competence {
+    background-image: url(../img/skills.svg);
+    width: 35px;
+    height: 35px;
+    background-size: cover;
+    background-position: center;
+}
+
+.skills {
     font-family: 'Titillium Web', sans-serif;
+    font-size: 16px;
+    display: flex;
+    padding-top: 30px;
+    font-weight: 400;
+    padding-left: 40px;
+}
+
+.skill {
+    display: flex;
+    flex-direction: column;
+}
+
+.competences {
+    display: flex;
+    flex-direction: column;
+}
+
+.competence {
+    padding-top: 5px;
+}
+
+.circle-check {
+    @include border-radius (50%);
+    width: 15px;
+    height: 15px;
+    background-color: $grey;
+    margin-left: 5px;
+    margin-top: 12px;
+}
+
+.circle-none {
+    @include border-radius (50%);
+    width: 15px;
+    height: 15px;
+    background-color: $white2;
+    margin-left: 5px;
+    margin-top: 12px;
+}
+
+.circle {
+    display: flex;
+    padding-left: 70px;
+}
+
+.ico-perso {
+    background-image: url(../img/information.svg);
+    width: 35px;
+    height: 35px;
+    background-size: cover;
+    background-position: center;
+}
+
+.inline-info {
+    display: flex;
+}
+
+.info {
+    font-family: 'Titillium Web', sans-serif;
+    padding-top: 30px;
+    padding-left: 50px;
+}
+
+.perso {
+    padding-top: 70px;
+}
+
+.strong {
     font-weight: bold;
 }
 
-.annee-3 {
-    font-size: 1.8rem;
+.none-strong {
+    padding-left: 20px;
 }
 
-.content-3 {
-    position: relative;
-    bottom: 55px;
-    left: 40px;
-    font-size: 1.8rem;
-}
-*/
-
-.content-2 {
-    position: relative;
-    width:100%;
-    top: 80px;
-    right: 15px;
+.ico-contact {
+    background-image: url(../img/contact.svg);
+    width: 35px;
+    height: 35px;
+    background-size: cover;
+    background-position: center;
 }
 
-.content-3 {
-    position: relative;
-    top:70px;
+.ico-tel {
+    background-image: url(../img/smartphone.svg);
+    width: 25px;
+    height: 25px;
+    background-size: cover;
+    background-position: center;
 }
 
+.ico-mail {
+    background-image: url(../img/mail.svg);
+    width: 25px;
+    height: 25px;
+    background-size: cover;
+    background-position: center;
+}
+
+.ico-site {
+    background-image: url(../img/site.svg);
+    width: 25px;
+    height: 25px;
+    background-size: cover;
+    background-position: center;
+}
+
+.ico-adress {
+    background-image: url(../img/place.svg);
+    width: 25px;
+    height: 25px;
+    background-size: cover;
+    background-position: center;
+}
+
+.info-contact {
+    padding-left: 50px;
+    padding-top: 30px;
+}
+
+.content-contact {
+    padding-left: 20px;
+}
+
+.inline-contact {
+    padding-top: 15px;
+}
+
+.contact {
+    padding-top: 50px;
+}
+
+.price {
+   color: $grey;
+padding-top: 50px;
+}
+
+.ico-price {
+    background-image: url(../img/trophy.svg);
+    width: 25px;
+    height: 25px;
+    background-size: cover;
+    background-position: center;
+}
+
+.price-describe-an {
+    padding-left: 5px;
+}
+
+.title-price {
+    font-size: 20px;
+    font-family: $titilium;
+    font-weight: bold;
+}
+
+.price-content {
+    padding-top: 20px;
+    padding-left: 40px;
+}
+
+.price-info {
+    padding-top: 30px;
+}
+
+.ico-skill {
+    background-image: url(../img/skills-2.svg);
+    width: 25px;
+    height: 25px;
+    background-size: cover;
+    background-position: center;
+}
+
+.part-5 {
+    padding-top: 50px;
+}
+
+.circle-xs {
+    display: flex;
+    padding-left: 40px;
+}
+.circle-check-xs {
+    @include border-radius (50%);
+    width: 10px;
+    height: 10px;
+    background-color: $grey;
+    margin-left: 5px;
+    margin-top: 12px;
+}
+
+.circle-none-xs {
+    @include border-radius (50%);
+    width: 10px;
+    height: 10px;
+    background-color: $white2;
+    margin-left: 5px;
+    margin-top: 12px;
+}
