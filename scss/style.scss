@@ -88,6 +88,10 @@ $titilium :'Titillium Web', sans-serif;
     padding-right: 70px;
 }
 
+a:hover, a:focus, a:active {
+    text-decoration: none;
+    color: $grey2;
+}
 .url {
     margin: 5px 10px;
     font-family: 'PT Sans', sans-serif !important;
@@ -103,13 +107,16 @@ $titilium :'Titillium Web', sans-serif;
     width: 35px;
     height: 35px;
 }
-.hover-ico:hover {
+.hover-ico {
     background-color: $grey2;
 }
-
 .hover-link {
     color: $grey2;
     text-decoration: none;
+}
+
+.social-hover:hover {
+    background-color: $grey2;
 }
 .twitter {
     background-image: url(../img/twitter.svg);
@@ -141,7 +148,7 @@ $titilium :'Titillium Web', sans-serif;
 
 .bottom {
     background-image: url(../img/bg.jpg);
-    height: 2000px;
+    height: 1400px;
     width: 100%;
     background-position: center;
     background-size: contain;
@@ -169,6 +176,10 @@ $titilium :'Titillium Web', sans-serif;
 .part-4 {
     margin-top: 50px;
     margin-left: 50px;
+}
+
+.part-5 {
+    padding-top: 50px;
 }
 
 .square-l {
@@ -471,10 +482,6 @@ padding-top: 50px;
     height: 25px;
     background-size: cover;
     background-position: center;
-}
-
-.part-5 {
-    padding-top: 50px;
 }
 
 .circle-xs {

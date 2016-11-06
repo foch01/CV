@@ -4,6 +4,7 @@
 <head>
     <link rel="stylesheet" href="css/bootstrap.min.css">
     <link rel="stylesheet" href="css/style.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
     <meta charset="UTF-8">
     <title>SANCEO Thomas - CV</title>
 </head>
@@ -21,22 +22,22 @@
                     <div class="biography">J’ai 19 ans, ancien sportif de haut-niveau dans le Judo et Jujitsu. Je suis passionné par le web depuis plus de 5 ans. J’ai une soif de réussir, je suis compétiteur et j’adore le challenge.</div>
                     <div class="social">
                         <div class="social-block">
-                            <a class="square center hover-ico" href="https://twitter.com/foch_01">
+                            <a class="twitter-hover square center social-hover" href="https://twitter.com/foch_01" target="_blank">
                                 <div class="twitter"></div>
                             </a>
-                            <p class="url">/foch_01</p>
+                            <a class="url twitter-hover-link" target="_blank" href="https://twitter.com/foch_01">/foch_01</a>
                         </div>
                         <div class="social-block">
-                            <a class="square center hover-ico" href="https://www.linkedin.com/in/sanceothomas">
+                            <a class="linkedin-hover square center social-hover" href="https://www.linkedin.com/in/sanceothomas" target="_blank">
                                 <div class="linkedin"></div>
                             </a>
-                            <p class="url">/sanceothomas</p>
+                            <a class="url linkedin-hover-link" target="_blank" href="https://www.linkedin.com/in/sanceothomas">/sanceothomas</a>
                         </div>
                         <div class="social-block">
-                            <a class="viadeo-test square center hover-ico" href="http://www.viadeo.com/p/00228elbfqkxbvsk">
+                            <a class="viadeo-hover social-hover square center" href="http://www.viadeo.com/p/00228elbfqkxbvsk" target="_blank">
                                 <div class="viadeo"></div>
                             </a>
-                            <a class="url" href="#">/thomas.sanceo</a>
+                            <a class="url viadeo-hover-link" href="http://www.viadeo.com/p/00228elbfqkxbvsk" target="_blank">/thomas.sanceo</a>
                         </div>
                     </div>
                 </div>
@@ -405,13 +406,60 @@
         </div>
     </div>
 </body>
-<script type="text/javascript" src="https://code.jquery.com/jquery-1.10.2.js">
-$("viadeo-test").hover(
+<script>
+
+    /*------------ HOVER ICO SOCIAL sur LINK -------------*/
+
+$(".viadeo-hover").hover(
   function () {
-    $("url").addClass('hover-link');
+      $(".viadeo-hover-link").addClass('hover-link');
   },
   function () {
-    $("url").removeClass('hover-link');
+      $(".viadeo-hover-link").removeClass('hover-link');
+  }
+  );
+$(".linkedin-hover").hover(
+  function () {
+      $(".linkedin-hover-link").addClass('hover-link');
+  },
+  function () {
+      $(".linkedin-hover-link").removeClass('hover-link');
+  }
+  );
+$(".twitter-hover").hover(
+  function () {
+      $(".twitter-hover-link").addClass('hover-link');
+  },
+  function () {
+      $(".twitter-hover-link").removeClass('hover-link');
+  }
+  );
+
+    /*----------------- HOVER LINK SOCIAL sur ICO ---------*/
+
+$(".viadeo-hover-link").hover(
+  function () {
+    $(".viadeo-hover").addClass('hover-ico');
+  },
+  function () {
+    $(".viadeo-hover").removeClass('hover-ico');
+  }
+  );
+
+$(".linkedin-hover-link").hover(
+  function () {
+    $(".linkedin-hover").addClass('hover-ico');
+  },
+  function () {
+    $(".linkedin-hover").removeClass('hover-ico');
+  }
+  );
+$(".twitter-hover-link").hover(
+  function () {
+    $(".twitter-hover").addClass('hover-ico');
+  },
+  function () {
+    $(".twitter-hover").removeClass('hover-ico');
   }
   );
 
