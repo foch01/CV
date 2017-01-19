@@ -260,6 +260,12 @@ a:hover, a:focus, a:active {
   bottom: 380px;
   left: 35px; }
 
+.item-4 {
+  position: relative;
+  bottom: 380px;
+  left: 35px;
+}
+
 .ico-competence {
   background-image: url(../img/skills.svg);
   width: 35px;
